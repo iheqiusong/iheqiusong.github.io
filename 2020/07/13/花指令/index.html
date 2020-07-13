@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>Archives: 2020/7 | Hexo</title>
+  <title>花指令 | Hexo</title>
   <meta name="author" content="John Doe" />
 
+  
+  <meta name="description" content="了解花指令的作用、使用方法及如何去除" />
   
 
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  
+  <meta property="og:title" content="花指令" />
   <meta property="og:site_name" content="Hexo" />
 
   
@@ -55,25 +57,76 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2020/7</h2>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2020-07-13T14:33:50.000Z"><a href="/2020/07/13/花指令/">2020-07-13</a></time>
+      
+      
+  
+    <h1 class="title">花指令</h1>
+  
 
+    </header>
+    <div class="entry">
+      
+        <p>了解花指令的作用、使用方法及如何去除</p>
+<a id="more"></a>
 
-  <div class="archive">
+<p>##花指令的作用</p>
+<blockquote>
+<p>花指令是对抗反汇编的有效手段之一，正常代码添加了花指令之后，可以破坏静态反汇编的过程，使反汇编的结果出现错误，使ida和ollydbg等搜索不到字符串。错误的反汇编结果会造成破解者的分析工作大量增加，进而使之不能理解程序的结构和算法，也就很难破解程序，从而达到病毒或软件保护的目的。<br>缺点：不能防止动态调试</p>
+</blockquote>
+<p>以以下代码为例：</p>
+<pre><code>#include &lt;iostream&gt;
+int main()
+{
+    _asm 
+    {
+        xor eax,eax
+        test eax,eax
+        je Label1
+        _emit 0e8h
+        Label1:
+    }
+
+    std::cout &lt;&lt; &quot;Test Junk Code&quot; &lt;&lt; std::endl;
+    system(&quot;pause&quot;);
+}</code></pre><p>##原理</p>
+<p>通过加入汇编代码构成恒成立跳转，在ollydbg中</p>
+<p><img src="1.png" alt="alt"></p>
+<p>在ida中</p>
+<p><img src="2.png" alt="alt"></p>
+<p>如何去除花指令进行反编译？</p>
+<p>找到花指令的地方，并将这个E8改为90(即nop)</p>
+<p><img src="3.png" alt="alt"></p>
+<p>改完后的效果，返现字符串已经吐出来了</p>
+<p><img src="4.png" alt="alt"></p>
+<p>可以看到在ida中就可以反汇编了</p>
+<p><img src="5.png" alt="alt"></p>
+<p><img src="6.png" alt="alt"></p>
+
+      
+    </div>
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2020-07-13T14:33:50.000Z"><a href="/2020/07/13/花指令/">2020-07-13</a></time>
-            
-              <h1 class="title"><a href="/2020/07/13/花指令/">花指令</a></h1>
-            
-          </header>
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
         </div>
-      </article>
-    
+        
+        
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
   </div>
+</article>
+
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
