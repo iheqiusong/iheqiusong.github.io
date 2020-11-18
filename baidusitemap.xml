@@ -3,116 +3,8 @@
 
     
   <url>
-    <loc>https://songzzzz.xyz/2020/07/22/%25E6%25A0%25881-%25E6%25A0%2588%25E6%25BA%25A2%25E5%2587%25BA%25E5%25AD%25A6%25E4%25B9%25A0/</loc>
-    <lastmod>2020-09-09T14:25:55.266Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下栈溢出学习 1</title>
-        <pubTime>2020-07-22T14:04:42.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/07/13/%25E8%258A%25B1%25E6%258C%2587%25E4%25BB%25A4/</loc>
-    <lastmod>2020-07-13T16:32:24.181Z</lastmod>
-    <data>
-        <display>
-        <title>花指令</title>
-        <pubTime>2020-07-13T14:33:50.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/05/21/%25E4%25BD%25BF%25E7%2594%25A8C%25E8%25AF%25AD%25E8%25A8%2580%25E5%2592%258C%25E6%2598%2593%25E8%25AF%25AD%25E8%25A8%2580%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E5%258D%2595%25E7%259A%2584%25E5%2586%2585%25E5%25AD%2598%25E8%25A1%25A5%25E4%25B8%2581/</loc>
-    <lastmod>2020-05-21T07:55:38.234Z</lastmod>
-    <data>
-        <display>
-        <title>使用C语言和易语言写一个简单的内存补丁</title>
-        <pubTime>2020-05-21T07:38:03.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/05/21/%25E5%25A6%2582%25E4%25BD%2595%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AAida%25E5%2592%258Collydbg%25E6%2590%259C%25E7%25B4%25A2%25E4%25B8%258D%25E5%2588%25B0%25E5%25AD%2597%25E7%25AC%25A6%25E4%25B8%25B2%25E7%259A%2584%25E7%25A8%258B%25E5%25BA%258F/</loc>
-    <lastmod>2020-05-21T07:33:55.440Z</lastmod>
-    <data>
-        <display>
-        <title>ida和ollydbg搜索不到字符串</title>
-        <pubTime>2020-05-21T06:53:04.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/04/07/%25E7%25A0%25B4%25E8%25A7%25A3%25E8%25BD%25AF%25E4%25BB%25B6%25E6%25B3%25A8%25E5%2586%258C%25E7%25A0%2581%25E7%259A%2584%25E4%25B8%2580%25E8%2588%25AC%25E6%2580%259D%25E8%25B7%25AF/</loc>
-    <lastmod>2020-04-07T15:23:50.039Z</lastmod>
-    <data>
-        <display>
-        <title>破解软件注册码的一般思路</title>
-        <pubTime>2020-04-07T15:03:52.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/04/02/AES%25E7%25AE%2597%25E6%25B3%2595/</loc>
-    <lastmod>2020-04-02T06:51:32.371Z</lastmod>
-    <data>
-        <display>
-        <title>C语言实现AES算法</title>
-        <pubTime>2020-04-02T06:37:44.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://songzzzz.xyz/2020/03/28/%25E7%2594%25A8c-%25E5%25AE%259E%25E7%258E%25B0%25E6%25A8%25A1%25E9%2587%258D%25E5%25A4%258D%25E5%25B9%25B3%25E6%2596%25B9%25E6%25B3%2595%25E5%2592%258C%25E5%25B9%25B3%25E6%2596%25B9%25E4%25B9%2598%25E7%25AE%2597%25E6%25B3%2595/</loc>
-    <lastmod>2020-03-27T17:26:26.382Z</lastmod>
-    <data>
-        <display>
-        <title>用c++实现模重复平方法和平方乘算法</title>
-        <pubTime>2020-03-27T17:16:11.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://songzzzz.xyz/2020/01/11/%25E5%25B1%2580%25E5%259F%259F%25E7%25BD%2591%25E9%2592%2593%25E9%25B1%25BC%25E6%2594%25BB%25E5%2587%25BB/</loc>
-    <lastmod>2020-03-27T17:17:03.437Z</lastmod>
+    <lastmod>2020-11-18T03:20:10.706Z</lastmod>
     <data>
         <display>
         <title>局域网钓鱼攻击</title>
@@ -120,6 +12,135 @@
         
          
            
+             
+              <breadCrumb title="好玩的" url="https://songzzzz.xyz/categories/%25E5%25A5%25BD%25E7%258E%25A9%25E7%259A%2584/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/03/28/%25E7%2594%25A8c-%25E5%25AE%259E%25E7%258E%25B0%25E6%25A8%25A1%25E9%2587%258D%25E5%25A4%258D%25E5%25B9%25B3%25E6%2596%25B9%25E6%25B3%2595%25E5%2592%258C%25E5%25B9%25B3%25E6%2596%25B9%25E4%25B9%2598%25E7%25AE%2597%25E6%25B3%2595/</loc>
+    <lastmod>2020-11-18T03:19:54.638Z</lastmod>
+    <data>
+        <display>
+        <title>用c++实现模重复平方法和平方乘算法</title>
+        <pubTime>2020-03-27T17:16:11.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="algorithm" url="https://songzzzz.xyz/categories/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/04/02/AES%25E7%25AE%2597%25E6%25B3%2595/</loc>
+    <lastmod>2020-11-18T03:19:44.814Z</lastmod>
+    <data>
+        <display>
+        <title>C语言实现AES算法</title>
+        <pubTime>2020-04-02T06:37:44.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="algorithm" url="https://songzzzz.xyz/categories/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/07/22/%25E6%25A0%25881-%25E6%25A0%2588%25E6%25BA%25A2%25E5%2587%25BA%25E5%25AD%25A6%25E4%25B9%25A0/</loc>
+    <lastmod>2020-11-18T03:17:42.161Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下栈溢出学习 1</title>
+        <pubTime>2020-07-22T14:04:42.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="pwn" url="https://songzzzz.xyz/categories/pwn/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/05/21/%25E4%25BD%25BF%25E7%2594%25A8C%25E8%25AF%25AD%25E8%25A8%2580%25E5%2592%258C%25E6%2598%2593%25E8%25AF%25AD%25E8%25A8%2580%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E5%258D%2595%25E7%259A%2584%25E5%2586%2585%25E5%25AD%2598%25E8%25A1%25A5%25E4%25B8%2581/</loc>
+    <lastmod>2020-11-18T03:17:13.507Z</lastmod>
+    <data>
+        <display>
+        <title>使用C语言和易语言写一个简单的内存补丁</title>
+        <pubTime>2020-05-21T07:38:03.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="reverse" url="https://songzzzz.xyz/categories/reverse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/05/21/%25E5%25A6%2582%25E4%25BD%2595%25E5%2586%2599%25E4%25B8%2580%25E4%25B8%25AAida%25E5%2592%258Collydbg%25E6%2590%259C%25E7%25B4%25A2%25E4%25B8%258D%25E5%2588%25B0%25E5%25AD%2597%25E7%25AC%25A6%25E4%25B8%25B2%25E7%259A%2584%25E7%25A8%258B%25E5%25BA%258F/</loc>
+    <lastmod>2020-11-18T03:17:08.494Z</lastmod>
+    <data>
+        <display>
+        <title>ida和ollydbg搜索不到字符串</title>
+        <pubTime>2020-05-21T06:53:04.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="reverse" url="https://songzzzz.xyz/categories/reverse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/04/07/%25E7%25A0%25B4%25E8%25A7%25A3%25E8%25BD%25AF%25E4%25BB%25B6%25E6%25B3%25A8%25E5%2586%258C%25E7%25A0%2581%25E7%259A%2584%25E4%25B8%2580%25E8%2588%25AC%25E6%2580%259D%25E8%25B7%25AF/</loc>
+    <lastmod>2020-11-18T03:17:05.543Z</lastmod>
+    <data>
+        <display>
+        <title>破解软件注册码的一般思路</title>
+        <pubTime>2020-04-07T15:03:52.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="reverse" url="https://songzzzz.xyz/categories/reverse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://songzzzz.xyz/2020/07/13/%25E8%258A%25B1%25E6%258C%2587%25E4%25BB%25A4/</loc>
+    <lastmod>2020-11-18T03:15:55.933Z</lastmod>
+    <data>
+        <display>
+        <title>花指令</title>
+        <pubTime>2020-07-13T14:33:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="reverse" url="https://songzzzz.xyz/categories/reverse/"/>
+          
         </display>
     </data>
     </url>
